@@ -1,545 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our-Compnay Associate</title>
+    <meta name="author" content="Velile Vamba" />
+    <meta content="" name="lorem100" />
+    <meta content="" name="keywords" />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" /> -->
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <!-- <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css"
+    />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style type="text/css">
+      .carousel-item {
+        height: 60vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
 
-  <title>Our-Compnay Associate</title>
-  <meta name="author" content="Velile Vamba">
-  <meta content="" name="lorem100">
-  <meta content="" name="keywords">
+      .main .wrap {
+        margin: 2rem;
 
-  <!-- Favicons -->
-  
+        transform-style: preserve-3d;
+        transform: perspective(100rem);
 
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+        cursor: pointer;
+      }
 
+      .main .container {
+        --rX: 0;
+        --rY: 0;
+        --bX: 50%;
+        --bY: 80%;
 
+        border: 1px solid var(--background-color);
+        border-radius: 1.6rem;
+        padding: 4rem;
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+        display: flex;
+        align-items: flex-end;
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+        position: relative;
+        transform: rotateX(calc(var(--rX) * 1deg))
+          rotateY(calc(var(--rY) * 1deg));
 
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
+        background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(32, 57, 84));
+        background-position: var(--bX) var(--bY);
+        background-size: 40rem auto;
+        box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%);
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-	<style type="text/css">
-		.carousel-item {
-		  height: 60vh;
-		  min-height: 350px;
-		  background: no-repeat center center scroll;
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		}
+        transition: transform 0.6s 1s;
+      }
 
-    .main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+      .main .container::before,
+      .main .container::after {
+        content: "";
 
-.main .wrap {
-  margin: 2rem;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid #fff;
 
-  transform-style: preserve-3d;
-  transform: perspective(100rem);
+        position: absolute;
+        z-index: 2;
 
-  cursor: pointer;
-}
+        opacity: 0.6;
+        transition: 0.3s;
+      }
 
-.main .container {
-  --rX: 0;
-  --rY: 0;
-  --bX: 50%;
-  --bY: 80%;
+      .main .container::before {
+        top: 2rem;
+        right: 2rem;
 
- 
-  border: 1px solid var(--background-color);
-  border-radius: 1.6rem;
-  padding: 4rem;
+        border-bottom-width: 0;
+        border-left-width: 0;
+      }
 
-  display: flex;
-  align-items: flex-end;
+      .main .container::after {
+        bottom: 2rem;
+        left: 2rem;
 
-  position: relative;
-  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+        border-top-width: 0;
+        border-right-width: 0;
+      }
 
-  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(32, 57, 84));
-  background-position: var(--bX) var(--bY);
-  background-size: 40rem auto;
-  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%);
+      .main .container--active {
+        transition: none;
+      }
 
-  transition: transform .6s 1s;
-}
+      .main .container--2 {
+        filter: hue-rotate(80deg) saturate(140%);
+      }
 
-.main .container::before,
-.main .container::after {
-  content: "";
+      .main .container--3 {
+        filter: hue-rotate(160deg) saturate(140%);
+      }
 
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #fff;
+      .main .container p {
+        color: hsla(0, 0%, 100%, 0.6);
+        font-size: 0.8rem;
+        text-align: left;
+      }
 
-  position: absolute;
-  z-index: 2;
+      .main .wrap:hover .container::before,
+      .main .wrap:hover .container::after {
+        width: calc(100% - 4rem);
+        height: calc(100% - 4rem);
+      }
 
-  opacity: .6;
-  transition: .3s;
-}
+      .main .abs-site-link {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        color: hsla(0, 0%, 0%);
+        font-size: 1.6rem;
+      }
 
-.main .container::before {
-  top: 2rem;
-  right: 2rem;
+      /*****************************************/
+      .solutions {
+        /* The image used */
+        background-image: url(assets/img/slider-2.jpg);
 
-  border-bottom-width: 0;
-  border-left-width: 0;
-}
+        /* Set a specific height */
+        min-height: 500px;
 
-.main .container::after {
-  bottom: 2rem;
-  left: 2rem;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
-  border-top-width: 0;
-  border-right-width: 0;
-}
+      .solutions .wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+      }
 
-.main .container--active {
-  transition: none;
-}
+      .solutions h1 {
+        color: #fff;
+        font-weight: normal;
+        text-align: center;
+        font-size: 48px;
+      }
 
-.main .container--2 {
-  filter: hue-rotate(80deg) saturate(140%);
-}
+      .solutions .panels {
+        list-style-type: none;
+        padding: 0;
+      }
 
-.main .container--3 {
-  filter: hue-rotate(160deg) saturate(140%);
-}
+      .solutions .panels li {
+        margin: 0;
+        display: block;
+        box-sizing: border-box;
+        float: left;
+      }
 
-.main .container p {
-  color: hsla(0, 0%, 100%, .6);
-  font-size: 0.8rem;
-  text-align: left;
-}
+      .solutions .panels li div {
+        padding: 10% 0;
+        text-align: center;
+        color: #fff;
+        font-size: 11px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        height: 50vh;
+      }
 
-.main .wrap:hover .container::before,
-.main .wrap:hover .container::after {
-  width: calc(100% - 4rem);
-  height: calc(100% - 4rem);
-}
+      /*// ANIMATION STYLES //*/
 
-.main .abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 0%);
-  font-size: 1.6rem;
-} 
+      .solutions .panels div.back {
+        transform: rotateY(90deg);
+      }
 
-/*****************************************/
-.solutions {
-  /* The image used */
-  background-image: url(assets/img/slider-2.jpg);
+      .solutions .panels div.front {
+        position: absolute;
+      }
 
-  /* Set a specific height */
-  min-height: 500px;
+      .solutions .panels li:hover div.front {
+        animation: twirl 0.2s ease-in forwards;
+      }
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+      .solutions .panels li:hover div.back {
+        animation: twirl 0.2s 0.2s ease-out forwards reverse;
+      }
 
-.solutions .wrapper{
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-}
+      @keyframes twirl {
+        0% {
+          transform: rotateY(0deg);
+        }
 
-.solutions h1{
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  font-size: 48px;
-}
+        100% {
+          transform: rotateY(90deg);
+        }
+      }
 
-.solutions .panels{
-  list-style-type: none;
-  padding: 0;
-}
+      .why-us {
+        /* The image used */
+        background-image: url(assets/img/slider-2.jpg);
 
-.solutions .panels li{
+        /* Set a specific height */
+        min-height: 350px;
 
-  margin: 0;
-  display: block;
-  box-sizing: border-box;
-  float: left;
-}
-
-.solutions .panels li div{
-  padding: 10% 0;
-  text-align: center;
-  color: #fff;
-  font-size: 11px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  height: 50vh;
-}
-
-/*// ANIMATION STYLES //*/
-
-.solutions .panels div.back {
-  transform: rotateY(90deg);
-}
-
-.solutions .panels div.front {
-  position: absolute;
-}
-
-.solutions .panels li:hover div.front {
-  animation: twirl 0.2s ease-in forwards;
-}
-.solutions .panels li:hover div.back {
-  animation: twirl 0.2s 0.2s ease-out forwards reverse;
-}
-
-@keyframes twirl {
-  0%{ transform: rotateY(0deg)}
-  100% {transform: rotateY(90deg)}
-}
-
-.why-us {
-  /* The image used */
-  background-image: url(assets/img/slider-2.jpg);
-
-  /* Set a specific height */
-  min-height: 350px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-	</style>
-</head>
-
-<body>
-
-  <header id="header" class="fixed-top">
-    <div class="container">
-
-      <div class="logo float-left">
-        
-        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="/"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">Despre noi</a></li>
-          <li><a href="#team">Echipa noastră</a></li>
-          <li><a href="#services">Servicii</a></li>
-		      <li><a href="#contact">Contact</a></li>
-        </ul>
-            
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End #header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section >
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url(assets/img/footer-bg.png)">
-          <div class="carousel-caption">
-            <h2 class="display-4">Our-Compnay</h2>
-            <p class="lead">Delivering relevant, agile yet simple technological solutions for financial services providers</p>
-          </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/slider-2.jpg)">
-          <div class="carousel-caption ">
-            <h2 class="display-4">Our-Compnay</h2>
-            <p class="lead">Delivering relevant technologies for our times</p>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/covid.jpg)">
-          <div class="carousel-caption covid-block">
-            <h2 class="display-4">We are in this together.</h2>
-            <p class="lead" style="background: rgba(0, 0, 0, 0.7); border-radius: 3px;">Our Organisation is committed on taking recommendations from the health authorities,
-               WHO (World Health Organisation) and our local authority. Our company is committed to follow
-              the guidelines which includes, refraining from non-essential travelling, self-isolation upon return
-              from any affected areas, social distancing, wearing of musk’s and use of hand sanitizer.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-    </div>
-  </section><!-- #hero -->
-  
-
-  <main id="main">
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header" class="fixed-top">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Despre noi</h2>
+        <div class="logo float-left">
+          <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
+          <a href="/">
+            <img src="assets/img/logo.png" alt="" class="img-fluid" />
+          </a>
         </div>
-
-        <div class="row">
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
-            <h3>Matexpert – Expertiza de care ai nevoie pentru succesul la matematică</h3>
-            <p class="">
-                La Matexpert, credem că matematica poate deveni o adevărată pasiune atunci când este predată clar, 
-                logic și adaptat nevoilor fiecărui elev. Oferim pregătire de top, bazată pe excelență academică, 
-                metodă și înțelegere profundă a conceptelor.
-            </p>
-            <section>
+        <nav class="nav-menu float-right d-none d-lg-block">
+          <ul>
+            <li class="active">
+              <a href="#header">Home</a>
+            </li>
+            <li>
+              <a href="#about">Despre noi</a>
+            </li>
+            <li>
+              <a href="#team">Echipa noastră</a>
+            </li>
+            <li>
+              <a href="#services">Servicii</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End #header -->
+    <!-- ======= Hero Section ======= -->
+    <section>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div
+            class="carousel-item active"
+            style="background-image: url(assets/img/footer-bg.png)"
+          >
+            <div class="carousel-caption">
+              <h2 class="display-4">Our-Compnay</h2>
+              <p class="lead">
+                Delivering relevant, agile yet simple technological solutions
+                for financial services providers
+              </p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slider-2.jpg)"
+          >
+            <div class="carousel-caption">
+              <h2 class="display-4">Our-Compnay</h2>
+              <p class="lead">Delivering relevant technologies for our times</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/covid.jpg)"
+          >
+            <div class="carousel-caption covid-block">
+              <h2 class="display-4">We are in this together.</h2>
+              <p
+                class="lead"
+                style="background: rgba(0, 0, 0, 0.7); border-radius: 3px"
+              >
+                Our Organisation is committed on taking recommendations from the
+                health authorities, WHO (World Health Organisation) and our
+                local authority. Our company is committed to follow the
+                guidelines which includes, refraining from non-essential
+                travelling, self-isolation upon return from any affected areas,
+                social distancing, wearing of musk’s and use of hand sanitizer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!-- #hero -->
+    <main id="main">
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>Despre noi</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+              <h3>
+                Matexpert – Expertiza de care ai nevoie pentru succesul la
+                matematică
+              </h3>
+              <p class="">
+                La Matexpert, credem că matematica poate deveni o adevărată
+                pasiune atunci când este predată clar, logic și adaptat nevoilor
+                fiecărui elev. Oferim pregătire de top, bazată pe excelență
+                academică, metodă și înțelegere profundă a conceptelor.
+              </p>
+              <section>
                 <h3>Ce oferim</h3>
                 <ul>
-                    <li>Meditații individuale și de grup pentru clasele III–XII</li>
-                    <li>Pregătire intensivă pentru <span class="highlight">Evaluarea Națională</span> și <span class="highlight">Bacalaureat</span></li>
-                    <li>Pregătire specializată pentru admiterea în clasa a V-a la liceele de top din Iași</li>
-                    <li>Cursuri de aprofundare pentru elevii care doresc să își consolideze cunoștințele</li>
+                  <li>
+                    Meditații individuale și de grup pentru clasele III–XII
+                  </li>
+                  <li>
+                    Pregătire intensivă pentru
+                    <span class="highlight">Evaluarea Națională</span>
+                    și
+                    <span class="highlight">Bacalaureat</span>
+                  </li>
+                  <li>
+                    Pregătire specializată pentru admiterea în clasa a V-a la
+                    liceele de top din Iași
+                  </li>
+                  <li>
+                    Cursuri de aprofundare pentru elevii care doresc să își
+                    consolideze cunoștințele
+                  </li>
                 </ul>
-            </section>
-            
-            <section>
+              </section>
+              <section>
                 <h3>De ce să alegi Matexpert</h3>
                 <ul>
-                    <li>Predare personalizată, adaptată ritmului fiecărui elev</li>
-                    <li>Metode moderne și eficiente de învățare</li>
-                    <li>Atmosferă prietenoasă, bazată pe încurajare și sprijin constant</li>
-                    <li>Rezultate dovedite și progres vizibil</li>
+                  <li>
+                    Predare personalizată, adaptată ritmului fiecărui elev
+                  </li>
+                  <li>Metode moderne și eficiente de învățare</li>
+                  <li>
+                    Atmosferă prietenoasă, bazată pe încurajare și sprijin
+                    constant
+                  </li>
+                  <li>Rezultate dovedite și progres vizibil</li>
                 </ul>
-            </section>
+              </section>
+            </div>
           </div>
         </div>
-
-
-      </div>
-    </section><!-- End About Us Section -->
-
-
-    <!-- ======= Our team Section ======= -->
-    <section id="team" class="team">
+      </section>
+      <!-- End About Us Section -->
+      <!-- ======= Our team Section ======= -->
+      <section id="team" class="team">
         <div class="container">
-  
           <div class="section-title">
             <h2>Echipa noastră</h2>
           </div>
-  
           <div class="row">
             <div class="col-lg-6 order-1 order-lg-2">
-              <img src="assets/img/Mada_S_asezata.jpeg" class="img-fluid" alt="">
+              <img
+                src="assets/img/Mada_S_asezata.jpeg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
               <h3>Mădălina Solcanu</h3>
-              <p class="">
-                  Sunt absolventă a Colegiului Național „Ștefan cel Mare” din Suceava 
-                  și a Facultății de Matematică, cu o experiență solidă în performanță școlară, 
-                  dovedită prin participarea la olimpiade de matematică încă din clasele gimnaziale și liceale.
+              <p>
+                Sunt absolventă a Colegiului Național „Ștefan cel Mare” din
+                Suceava și a Facultății de Matematică, cu o experiență solidă în
+                performanță școlară, dovedită prin participarea la olimpiade de
+                matematică încă din clasele gimnaziale și liceale.
               </p>
               <p>
-                  Pasiunea pentru matematică și dorința de a-i ajuta și pe alții să descopere frumusețea acestei 
-                  discipline m-au motivat să ofer meditații personalizate, adaptate fiecărui elev.
+                Pasiunea pentru matematică și dorința de a-i ajuta și pe alții
+                să descopere frumusețea acestei discipline m-au motivat să ofer
+                meditații personalizate, adaptate fiecărui elev.
               </p>
               <p>
-                  Cred cu tărie că prin răbdare, metode clare și exercițiu constant, oricine își poate atinge potențialul maxim. 
-                  Scopul meu este să transform matematica dintr-un obstacol într-o reușită pentru fiecare dintre elevii mei.
+                Cred cu tărie că prin răbdare, metode clare și exercițiu
+                constant, oricine își poate atinge potențialul maxim. Scopul meu
+                este să transform matematica dintr-un obstacol într-o reușită
+                pentru fiecare dintre elevii mei.
               </p>
             </div>
           </div>
-  
           <div class="row">
-              <div class="col-lg-6 order-1 order-lg-2">
-                <img src="assets/img/Mada_M_asezata.jpeg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
-                <h3>Mădălina Munteanu</h3>
-                <p class="">
-                    To be filled in
-                </p>
-                <p>
-                  To be filled in
-                </p>
-                <p>
-                  To be filled in
-                </p>
-              </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <img
+                src="assets/img/Mada_M_asezata.jpeg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
-  
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+              <h3>Mădălina Munteanu</h3>
+              <p class="">To be filled in</p>
+              <p>To be filled in</p>
+              <p>To be filled in</p>
+            </div>
+          </div>
         </div>
-      </section><!-- End About Us Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+      </section>
+      <!-- End About Us Section -->
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services section-bg">
         <div class="container">
-        
-        <div class="text-center">
-          
-        <div class="section-title">
-          <h2 style="color: #fff;">Our approach</h2>
+          <div class="text-center">
+            <div class="section-title">
+              <h2 style="color: #fff">Our approach</h2>
+            </div>
+            <p>
+              Our company approach focuses on bringing a better user interface
+              for our client’s business to meet the emerging business
+              environments. We achieve this through our Three Phase Process
+            </p>
+            <div class="container-fluid">
+              <div class="col-md-12">
+                <div class="row main">
+                  <div class="wrap wrap--3 col-md-3">
+                    <h6 style="color: #fff; text-align: right">
+                      01. System Alignment Phase
+                    </h6>
+                    <div class="container container--3">
+                      <p>
+                        Serves to determine the scope, resourcing, and
+                        timeframes for a Project Implementation Phase
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wrap wrap--3 col-md-3">
+                    <h6 style="color: #fff; text-align: right">
+                      02. Implementation Phase
+                    </h6>
+                    <div class="container container--3">
+                      <p>
+                        Delivering the tasks necessary to allow the FA portfolio
+                        administration systems to run live. These tasks will be
+                        mutually agreed and detailed in the System Alignment
+                        Phase
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wrap wrap--3 col-md-3">
+                    <h6 style="color: #fff; text-align: right">
+                      03. Monthly Ongoing Phase
+                    </h6>
+                    <div class="container container--3">
+                      <p>
+                        Includes time to be used for on–going development as
+                        well as pure support and maintenance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-          <p>Our company approach focuses on bringing a better user interface for our client’s business to
-meet the emerging business environments. We achieve this through our Three Phase Process</p>
-
-<div class="container-fluid">
-  <div class="col-md-12">
-      <div class="row main">
-          <div class="wrap wrap--3 col-md-3">
-            <h6 style="color: #fff; text-align: right;">01. System Alignment Phase </h6>
-              <div class="container container--3 ">
-                  <p>Serves to determine the scope, resourcing, and timeframes for a Project Implementation
-                    Phase</p>
+      </section>
+      <!-- End Services Section -->
+      <!-- ======= Contact Us Section ======= -->
+      <section id="contact" class="contact section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="contact-about">
+                <h3>MATEXPERT Center</h3>
+                <p>Expertiza de care ai nevoie pentru succesul la matematică</p>
+                <div class="social-links">
+                  <a
+                    class="facebook-link bg-link"
+                    href="https://www.facebook.com/matexpertcenter"
+                  >
+                    <i class="icofont-facebook"></i>
+                  </a>
+                  <a
+                    class="instagram-link bg-link"
+                    href="https://www.facebook.com/matexpertcenter"
+                  >
+                    <i class="icofont-instagram"></i>
+                  </a>
+                  <a
+                    class="tiktok-link bg-link"
+                    href="https://www.facebook.com/matexpertcenter"
+                  >
+                    <i class="icofont-tiktok"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          
-            <div class="wrap wrap--3  col-md-3">
-              <h6 style="color: #fff; text-align: right;">02.   Implementation Phase</h6>
-              <div class="container container--3 ">
-		<p>Delivering the tasks necessary to allow the FA portfolio administration systems to run live.
-These tasks will be mutually agreed and detailed in the System Alignment Phase</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="info">
+                <div>
+                  <i class="icofont-google-map"></i>
+                  <p>Şoseaua Bârnova 150, C3, Iaşi</p>
+                </div>
+                <div>
+                  <i class="icofont-envelope"></i>
+                  <p>matexpertcenter@gmail.com</p>
+                </div>
+                <div>
+                  <i class="icofont-phone"></i>
+                  <p>0744 282 904</p>
+                </div>
+                <div>
+                  <i class="icofont-phone"></i>
+                  <p>0750 282 905</p>
+                </div>
               </div>
             </div>
-          
-            <div class="wrap wrap--3 col-md-3">
-              <h6 style="color: #fff; text-align: right;">03. Monthly Ongoing Phase</h6>
-              <div class="container container--3 ">
-                <p>
-                  Includes time to be used for on–going development as well as pure support and
-            maintenance.</p>
-            
-              </div>
-            </div>
-          
-      </div>
-  </div>
-</div>
+          </div>
         </div>
-      </div>
-    </section><!-- End Services Section -->
+      </section>
+      <!-- End Contact Us Section -->
+      <!-- ======= Map Section ======= -->
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.6456500104323!2d27.620350676771274!3d47.10601692241062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40caf9990a7f7f53%3A0x851b2cb63dda1735!2sMATEXPERT%20Center!5e0!3m2!1sro!2sro!4v1745702288796!5m2!1sro!2sro"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
 
-   
-
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact section-bg">
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
       <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="contact-about">
-              <h3>MATEXPERT Center</h3>
-              <p>Expertiza de care ai nevoie pentru succesul la matematică</p>
-              <div class="social-links">
-                <a href="https://www.facebook.com/matexpertcenter"><i class="icofont-facebook"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info">
-            
-              <div>
-                <i class="icofont-google-map"></i>
-                <p>Şoseaua Bârnova 150, C3, Iaşi</p>
-              </div>
-
-              <div>
-                <i class="icofont-envelope"></i>
-                <p>matexpertcenter@gmail.com </p>
-              </div>
-
-              <div>
-                <i class="icofont-phone"></i>
-                <p>0744 282 904</p>
-              </div>
-
-              <div>
-                <i class="icofont-phone"></i>
-                <p>0750 282 905</p>
-              </div>
-
-
-            </div>
-          </div>
-
+        <div class="copyright">
+          &copy; Copyright
+          <strong>
+            <span>MATEXPERT Center</span>
+          </strong>
+          . All Rights Reserved
         </div>
-
       </div>
-    </section><!-- End Contact Us Section -->
-   
-    <!-- ======= Map Section ======= -->
-    <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.6456500104323!2d27.620350676771274!3d47.10601692241062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40caf9990a7f7f53%3A0x851b2cb63dda1735!2sMATEXPERT%20Center!5e0!3m2!1sro!2sro!4v1745702288796!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>MATEXPERT Center</span></strong>. All Rights Reserved
-      </div>
-      
-    </div>
-  </footer><!-- End #footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    </footer>
+    <!-- End #footer -->
+    <a href="#" class="back-to-top">
+      <i class="icofont-simple-up"></i>
+    </a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> -->
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+    <!-- <script src="assets/vendor/venobox/venobox.min.js"></script> -->
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
