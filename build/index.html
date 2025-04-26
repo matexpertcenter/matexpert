@@ -11,6 +11,41 @@
             height: 75%;
             object-fit: cover;
         }
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      min-height: 100vh;
+      padding-top: 50px;
+    }
+    .menu-container {
+      background: white;
+      padding: 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .menu-container nav a {
+      display: inline-block;
+      margin: 0 15px;
+      color: #4CAF50;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .menu-container nav a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .menu-container nav a.active {
+      background-color: #2e7d32;
+      color: white;
+    }
     </style>
 </head>
 <body>
