@@ -16,7 +16,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, .font-primary {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #hero .btn-get-started {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
@@ -465,6 +465,8 @@ section {
 
 .about ul li {
   padding-bottom: 10px;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 .about ul i {
@@ -537,7 +539,7 @@ section {
 }
 
 .call-to-action .cta-btn {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
@@ -762,7 +764,7 @@ section {
 .contact .contact-about p {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #888;
 }
 
@@ -806,6 +808,7 @@ section {
   padding: 0 0 10px 42px;
   line-height: 28px;
   font-size: 14px;
+  color: white
 }
 
 .contact .php-email-form .validate {
