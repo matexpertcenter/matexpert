@@ -458,9 +458,14 @@ section {
   font-size: 26px;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 .about ul {
   list-style: none;
   padding: 0;
+  padding-inline-start: 0;
 }
 
 .about ul li {
